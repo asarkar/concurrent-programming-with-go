@@ -18,8 +18,6 @@ jobs:
           go version
       - name: Test
         run: ./.github/run.sh --no-lint
-      - name: Vet
-        run: ./.github/run.sh --no-test
       - name: Lint
         uses: golangci/golangci-lint-action@v8
         with:

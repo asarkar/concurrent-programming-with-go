@@ -7,6 +7,8 @@ Official GitHub repo: https://github.com/cutajarj/ConcurrentProgrammingWithGo
 ## Contents
 
 2. [Dealing with threads](ch02)
+3. [Thread communication using memory sharing](ch03)
+4. [Synchronization with mutexes](ch04)
 
 ## Development
 

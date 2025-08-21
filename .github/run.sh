@@ -29,18 +29,24 @@ while (( $# > 0 )); do
    esac
 done
 
-if (( no_test == 0 )); then
-  if [[ -z "$1" ]]; then
-    go test -v ./...
-  else
-    go test -v ./"$1"/...
-  fi
+package=./...
+if [[ -n $1 ]]; then
+  package=./"$1"/...
 fi
 
-if (( no_lint == 0 )); then
-	if [[ -z "$1" ]]; then
-    go vet ./...
+if (( no_test == 0 )); then
+  go test -v "$package"
+fi
+
+if (( no_lint == 0 )) ; then
+  red=$(tput -Txterm-256color setaf 1)
+  default=$(tput -Txterm-256color sgr0)
+  if [[ -x "$(command -v golangci-lint)" ]]; then
+    if [[ -z $CI ]]; then
+      golangci-lint fmt "$package"
+    fi
+    golangci-lint run "$package"
   else
-    go vet ./"$1"/...
+    printf "%bgolangci-lint not found%b\n" "$red" "$default"
   fi
 fi
