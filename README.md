@@ -6,9 +6,12 @@ Official GitHub repo: https://github.com/cutajarj/ConcurrentProgrammingWithGo
 
 ## Contents
 
+### Part 1. Foundations
 2. [Dealing with threads](ch02)
 3. [Thread communication using memory sharing](ch03)
 4. [Synchronization with mutexes](ch04)
+5. [Condition variables and semaphores](ch05)
+6. [Synchronizing with waitgroups and barriers](ch06)
 
 ## Development
 
