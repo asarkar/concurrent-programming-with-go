@@ -16,7 +16,7 @@ like in the previous exercises. Otherwise, if you give it a directory, it should
 a new goroutine for each file or directory found inside. Call the program grepdirrec.go, and
 execute it by running this command:
 
-go run grepdirrec.go bubbles ../../files
+go run grepdirrec.go bubbles ../files
 */
 
 func grep(filename string, word string) {

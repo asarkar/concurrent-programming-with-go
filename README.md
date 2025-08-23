@@ -13,6 +13,11 @@ Official GitHub repo: https://github.com/cutajarj/ConcurrentProgrammingWithGo
 5. [Condition variables and semaphores](ch05)
 6. [Synchronizing with waitgroups and barriers](ch06)
 
+### Part 2. Message passing
+7. [Communication using message passing](ch07)
+8. [Selecting channels](ch08)
+9. [Programming with channels](ch09)
+
 ## Development
 
 To avoid `go` directory created under `$HOME`, run:

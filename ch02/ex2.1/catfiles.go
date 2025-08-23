@@ -15,7 +15,7 @@ file to the console. You can use the time.Sleep() function to wait for the child
 complete (until you know how to do this better). Call the program catfiles.go. Here's how you can
 execute this Go program:
 
-go run catfiles.go ../../files/file1.txt ../../files/file2.txt ../../files/file3.txt
+go run catfiles.go ../files/file1.txt ../files/file2.txt ../files/file3.txt
 */
 
 func cat(filename string) {

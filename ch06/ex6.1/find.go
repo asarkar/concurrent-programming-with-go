@@ -10,7 +10,7 @@ import (
 )
 
 /*
-In listings 6.5 and 6.6, we developed a recursive concurrent file search. When a goroutine finds
+1. In listings 6.5 and 6.6, we developed a recursive concurrent file search. When a goroutine finds
 a file match, it outputs it on the console. Can you change the implementation of this file search
 so that it prints all the file matches, sorted into alphabetical order, after the search completes?
 Hint: try collecting the results in a shared data structure instead of printing them on the console
