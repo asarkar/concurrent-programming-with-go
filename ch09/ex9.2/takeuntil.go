@@ -17,10 +17,12 @@ func TakeUntil[K any](f func(K) bool, quit chan int, input <-chan K) <-chan K {
 		for moreData {
 			select {
 			case msg, moreData = <-input:
-				if moreData && f(msg) {
-					output <- msg
+				if moreData {
+					moreData = f(msg)
+					if moreData {
+						output <- msg
+					}
 				}
-				moreData = f(msg)
 			case <-quit:
 				return
 			}
