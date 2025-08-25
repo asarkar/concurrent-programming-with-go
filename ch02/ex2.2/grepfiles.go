@@ -17,7 +17,7 @@ it should output a message saying that the filename contains a match. Call the p
 grepfiles.go. Here's how you can execute this Go program ("bubbles" is the search string in
 this example):
 
-go run grepfiles.go bubbles ../files/file1.txt ../files/file2.txt ../files/file3.txt
+go run grepfiles.go bubbles ../../files/file1.txt ../../files/file2.txt ../../files/file3.txt
 */
 
 func grep(filename string, word string) {

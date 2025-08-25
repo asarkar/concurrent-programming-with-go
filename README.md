@@ -18,6 +18,9 @@ Official GitHub repo: https://github.com/cutajarj/ConcurrentProgrammingWithGo
 8. [Selecting channels](ch08)
 9. [Programming with channels](ch09)
 
+### Part 3. More concurrency
+10. [Concurrency patterns](ch10)
+
 ## Development
 
 To avoid `go` directory created under `$HOME`, run:

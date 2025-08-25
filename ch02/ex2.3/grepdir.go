@@ -15,7 +15,7 @@ filenames, you pass a directory path. The program will look inside this director
 files. For each file, you can spawn a goroutine that will search for a string match (the same as
 before). Call the program grepdir.go. Here's how you can execute this Go program:
 
-go run grepdir.go bubbles ../files
+go run grepdir.go bubbles ../../files
 */
 
 func grep(filename string, word string) {
